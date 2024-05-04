@@ -1,0 +1,51 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+
+// Colores del tema
+$primary: #B30B26;
+$primary-dark: #990A22;
+$body-bg: #F5F7FA;
+
+$theme-colors: map-merge($theme-colors, (
+    "primary": $primary
+));
+
+$headings-font-family: 'Bebas Neue';
+$headings-color: $secondary;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../node_modules/leaflet/dist/leaflet.css';
+
+.logo-menu-lateral {
+    width: 32px;
+    height: 32px;
+}
+
+nav > #botones-nav > .btn {
+    color: $secondary;
+    width: fit-content;
+    background-color: white;
+    border: none;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+nav > #botones-nav > .btn:hover {
+    background-color: $body-bg;
+}
+
+nav > #botones-nav > .btn.active {
+    color: white;
+    background-color: $primary;
+}
+
+.label-dato {
+    font-family: 'Roboto';
+}
